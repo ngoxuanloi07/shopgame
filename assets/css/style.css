@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(https://i.imgur.com/6jLf4qc.png);
+    
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.nav {
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    margin-top: -118px;
+}
+.nav2 {
+    margin-top: 118px;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.nav-logo {
+    flex: 1;
+}
+.logo {
+    width: 180px;
+    height: 90px;
+
+}
+.nav-list {
+    flex: 3;
+   
+    
+
+}
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 90px;
+    
+    
+    
+
+}
+.nav-item {
+    
+}
+.nav-item a {
+    text-decoration: none;
+    font-weight: 550;
+
+}
+.nav-link {
+    position: relative;
+   
+
+}
+.nav-link a {
+    color: #fffb00;
+    
+    
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    color: #d4ff13;
+    
+    background-color: rgb(245, 14, 14);
+    bottom: 30px;
+   
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+}
+.nav-link:hover::after {
+    transform: scaleX(1);
+    color: rgb(255, 251, 1);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-log {
+    flex: 1;
+    display: flex;
+   justify-content: space-between;
+    line-height: 90px;
+    
+
+}
+/* cách làm button xịn xò - transition b evondev*/
+.nav-log-in {
+    background-color: transparent;
+   font-size: 14px;
+    font-weight: 550;
+    border-radius: 12px;
+    width: 111px;
+    text-align: center;
+    height: 40px;
+    margin-top: 22px;
+    transition: all 0.4s;
+    position: relative;
+    color: #48fff6;
+   
+}
+.nav-log-in span {
+    position: absolute;
+    background-color: #48fff6;
+    display: block;
+    transition: all 0.15s linear;
+
+}
+.nav-log-in span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+}
+.nav-log-in span:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+}
+.nav-log-in span:nth-child(3) {
+    bottom:0;
+    right: 0;
+    width: 0;
+    height: 2px;
+}
+.nav-log-in span:nth-child(4) {
+    left:0;
+    bottom: 0;
+    width: 2px;
+    height: 0;
+}
+.nav-log-in:hover span:nth-child(odd) {
+    cursor: pointer;
+    width: 100%;
+}
+.nav-log-in:hover span:nth-child(even) {
+    cursor: pointer;
+    height: 100%;
+}
+.nav-log-in:hover {
+    cursor: pointer;
+} 
+
+.nav-sign-in {
+    margin-top: 22px;
+    background-color: transparent;
+   height: 40px;
+    font-weight: 550;
+    font-size: 14px;
+    border-radius: 12px;
+    width: 111px;
+    text-align: center;
+    color: #48fff6;
+    position: relative;
+}
+.nav-sign-in span {
+    position: absolute;
+    display: block;
+    background-color: #48fff6;
+    transition: all 0.15s linear;
+
+}
+.nav-sign-in span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+}
+.nav-sign-in span:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+}
+.nav-sign-in span:nth-child(3) {
+    bottom:0;
+    right: 0;
+    width: 0;
+    height: 2px;
+}
+.nav-sign-in span:nth-child(4) {
+    left:0;
+    bottom: 0;
+    width: 2px;
+    height: 0;
+}
+.nav-sign-in:hover span:nth-child(odd) {
+    cursor: pointer;
+    width: 100%;
+}
+.nav-sign-in:hover span:nth-child(even) {
+    cursor: pointer;
+    height: 100%;
+}
+.nav-sign-in:hover {
+    cursor: pointer;
+}
+
+
+/* .nav-sign-in:hover {
+    cursor: pointer;
+    background-color: #ff0000;
+} */
+
+
+.nav-log-in p {
+   line-height: 100%;
+   
+    line-height: 300%;
+}
+.nav-sign-in p {
+    line-height: 300%;
+    
+   
+}
+/*  phần header */
+
+.header {
+    margin-top: 10px;
+}
+.bg-header {
+    width: 100% ;
+    height: 422px;
+    opacity: 0.6;
+    color: rgba(0,0,0,0.8);
+}
+
+.header-3 {
+    background-color: rgb(12, 11, 11);
+    height: 386px ;
+    
+
+}
+.header-9 {
+    margin-left: -12px;
+    height: 386px;
+
+}
+.header-bg {
+    position: relative;
+    background-color: rgba(0,0,0,0.7);
+}
+.header-bg-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.napthe-header {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 36px;
+}
+.napthe {
+    color: #e42121;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer; 
+}
+
+.topnapthe {
+    margin-left: 20px;
+    cursor: pointer;
+    color: #b4b3bb;
+    font-size: 15px;
+    font-weight: 600;
+}
+.btn {
+    margin-bottom: 16px;
+    padding: 10px;
+    width: 100%;
+    cursor: f;
+    
+}
+
+
+.btn-napthe {
+    margin-top: 16px;
+    
+    
+}
+.btn-napthe-bg {
+    background: linear-gradient(to top, #FFE900 0%, #F2AC00 100%);
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.viettel {
+    position: relative;
+}
+.viettel p {
+    text-align: left;
+    cursor: pointer;
+}
+.chongiatrithe p {
+    text-align: left;
+    cursor: pointer;
+}
+.ti-vt {
+    margin-left: 184px;
+    
+
+}
+.ti-giatri {
+    margin-left: 100px;
+}
+/* LÀM CÁI MENU CẤP BẬC*/
+
+.viettel-list {
+    list-style: none;
+    position:absolute;
+    background-color: #11110f;
+    width: 100%;
+    margin-top: -18px;
+    display: none;
+    border: 1px solid #F2AC00;
+}
+.viettel:hover .viettel-list {
+    display: block;
+}
+.chongiatrithe:hover .viettel-list {
+    display: block;
+}
+.viettel-item a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+.viettel-item:active .viettel-list {
+    display: none;
+}
+
+.viettel-item {
+    padding: 6px;
+   
+   
+}
+.viettel-item:hover {
+    background-color: #8f8a58;
+}
+.chongiatrithe-list {
+    width: 282px;
+}
+/* phần header 9*/
+.bg-header-9 {
+    width: 102.6%;
+    height:386px ;
+   padding: 0 -32px;
+}
+/* phần content*/
+.content {
+    margin-top: 50px;
+    background-color: rgba(0,0,0,0.7);
+    
+
+}
+.content-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    
+    position: relative;
+    color: #fff;
+    padding-top: 20px;
+
+}
+.content-header p {
+   
+}
+.content-header::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #09e709;
+    width: 10%;
+    top: 74px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+}
+
+.content-bao {
+    border: 1px solid #09e709;
+    height: 320px;
+    cursor: pointer;
+   
+}
+.content-item {
+    position: relative;
+}
+.giamgia {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    width: 60px;
+    height: 50px;
+}
+.content-img-bg {
+    width: 100%;
+    height: 160px;
+}
+.item-header {
+    margin-top: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    
+}
+.item-header p {
+    color: #fff;
+}
+.content-text {
+    margin: 16px 16px;
+    color: #fff;
+}
+span {
+    color:red;
+    font-weight: 700;
+}
+.content-btn {
+    margin-top: -10px;
+}
+.overlay {
+    position: absolute;
+    width: 92%;
+    height: 70%;
+    top: 0;
+   
+    background:linear-gradient(rgba(0,0,0,0.5), #009688);
+   opacity: 0;
+    transition: 0.7s;
+}
+.content-desc {
+    width: 80%;
+    bottom: 0;
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-40%);
+    transition: 0.3s;
+    opacity: 0;
+
+}
+.content-item:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+.content-item:hover .content-desc {
+    opacity: 1;
+    bottom: 50%;
+    cursor: pointer;
+}
+.content-desc p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.content2 {
+    margin-top: 80px;
+}
+.content-xem:hover {
+    color: #eb2906;
+}
+
+/*
+Phần footer
+*/
+
+.footer {
+    background-color: #11110f;
+    position: relative;
+
+}
+.footers p {
+    color: white;
+
+
+}
+.footers {
+    margin-top: 40px;
+}
+.footer-header {
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer-header p {
+    color: white;
+    line-height: 1.4rem;
+    margin-bottom: 40px;
+    
+}
+.mess {
+    margin-top: 10px;
+    width: 218px;
+    height: 73px;
+    margin-left: -22px;
+    cursor: pointer;
+    
+}
+
+
+.footer-list {
+    list-style: none;
+}
+.footer-item a  {
+    text-decoration: none;
+    color: white;
+}
+.footer-item {
+   margin-bottom: 16px;
+   
+}
+
+.footer-youtube {
+    color: rgb(238, 16, 16);
+   font-size: 40px;
+
+}
+.nenlogo {
+    
+   position: fixed;
+    z-index: 4;
+    bottom: 40px;
+    left: 20px;
+   border-radius: 50%;
+    padding: 10px;
+    border: 2px solid #d4ff13;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: 2px;
+    
+
+}
+.nenlogo:hover {
+    transform: scale(1.8,1.8);
+    z-index:5;
+    margin-left: 40px;
+  
+}
+.logo-nen {
+   
+    width: 110px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
